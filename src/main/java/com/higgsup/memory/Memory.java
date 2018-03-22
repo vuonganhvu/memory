@@ -13,4 +13,9 @@ public class Memory {
         String str = param.toString(); //// Line 7
         System.out.println(str);
     } // Line 8
+
+    private void foo2(Object param) { // Line 6
+        String str = param.toString(); //// Line 7
+        System.out.println(str);
+    }
 }
