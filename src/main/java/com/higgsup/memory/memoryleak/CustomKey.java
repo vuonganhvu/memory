@@ -15,14 +15,16 @@ public class CustomKey {
         for(int i = 0; i< 10000; i++){
             CustomKey key = new CustomKey("Shamik"+i);
             map.put(key, "Shamik Mitra");
-//            String val = map.get(new CustomKey("Shamik"+i));
-            String val = map.get(key);
+            String val = map.get(new CustomKey("Shamik"+i));
+//            String val = map.get(key);
             System.out.println("Missing equals and hascode so value is not accessible from Map " + val);
         }
-        int size = map.size();
-        for(int i=0; i< 1000; i++){
-            CustomKey key = new CustomKey("Shamik"+(i+size));
-            map.put(key, "Shamik Mitra");
-        }
+
+
+//        int size = map.size();
+//        for(int i=0; i< 1000; i++){
+//            CustomKey key = new CustomKey("Shamik"+(i+size));
+//            map.put(key, "Shamik Mitra");
+//        }
     }
 }

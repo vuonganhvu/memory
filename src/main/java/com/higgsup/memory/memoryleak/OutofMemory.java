@@ -14,7 +14,7 @@ public class OutofMemory {
         for (int i =1; i < size; i++) {
             String key = "Anil"+i;
             String val = map.get(key);
-            map.remove(key);
+//            map.remove(key);
             System.out.println(key + " :: " + val);
         }
     }
@@ -23,7 +23,6 @@ public class OutofMemory {
         OutofMemory cache = new OutofMemory();
         cache.initCache(5000);
         cache.forEachDisplay(5000);
-        cache.initCache(3000);
     }
 
     private void initCache(long size){
